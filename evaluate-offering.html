@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقييم العروض | مِهرَه</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+<!-- ========     header     ========= -->
+
+   <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html">من نحن؟</a></li>
+        <li><a href="member-dashboard.html" class="active" aria-current="page">مساحتي</a></li>
+        <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+        <li><a href="community.html">المجتمع</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="member-dashboard.html">مساحتي</a></li>
+        <li aria-current="page">تقييم العروض</li>
+      </ol>
+    </nav>
+    <h1 class="page-title">تقييم العروض</h1>
+
+
+<!-- نموذج تقييم أحد العروض السابقة -->
+
+<section class="section">
+
+  <h2 class="section-title">تقييم أحد العروض السابقة</h2>
+
+  <!-- الإطار الخارجي الكبير -->
+
+<form class="evaluation-panel" id="evaluation-form" novalidate>
+    <!-- اختيار الورشة -->
+
+    <div class="workshop-select">
+      <label for="workshop" class="visually-hidden">اختر الورشة المكتملة</label>
+      <select id="workshop" name="workshop" required>
+        <option value="">اختر الورشة المكتملة</option>
+        <option value="candles">صناعة الشموع</option>
+        <option value="pottery">صناعة الفخار</option>
+        <option value="ceramics">الرسم على الخزف</option>
+      </select>
+    </div>
+
+    <!-- الإطار الداخلي: النجوم والتعليق والزر -->
+
+    <div class="rating-box">
+
+      <!-- التقييم بالنجوم -->
+
+      <fieldset class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" title="5 نجوم">★</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title="4 نجوم">★</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="3 نجوم">★</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="نجمتان">★</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="نجمة واحدة">★</label>
+      </fieldset>
+
+      <!-- التعليق -->
+
+      <label for="evaluation-comment" class="visually-hidden">التعليق</label>
+      <textarea
+        id="evaluation-comment"
+        name="comment"
+        placeholder="قم بإضافة تعليقك...."
+      ></textarea>
+
+      <!-- زر الإرسال -->
+
+      <div class="evaluation-actions">
+        <button type="submit" class="btn">إرسال التقييم</button>
+      </div>
+    </div>
+  </form>
+
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+<script src="js/theme.js"></script>
+<script src="js/evaluation.js"></script>
+</body>
+</html>

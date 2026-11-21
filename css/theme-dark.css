@@ -1,0 +1,535 @@
+
+body {
+  background-color: #1F1A16;
+  color: #EDE4D6;
+}
+
+a {
+  color: #E3B27A;
+}
+
+.site-header {
+  background-color: #1F1A16;
+  border-bottom: 1px solid #4A3F36;
+}
+
+.nav-links a {
+  color: #EDE4D6;
+}
+
+.nav-links a:hover {
+  background-color: #3A312A;
+}
+
+.breadcrumb li + li::before {
+  color: #C9BBAA;
+}
+
+.breadcrumb a {
+  color: #C9BBAA;
+}
+
+.breadcrumb a:hover {
+  color: #A9BC96;
+}
+
+.breadcrumb li[aria-current="page"] {
+  color: #E3B27A;
+}
+
+.page-title {
+  color: #E3B27A;
+}
+
+.section-title {
+  color: #E3B27A;
+}
+
+.card {
+  background-color: #342B25;
+}
+
+.btn-outline {
+  color: #A9BC96;
+}
+
+.form-box {
+  background-color: #2A231E;
+}
+
+input,
+select,
+textarea {
+  color: #EDE4D6;
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.about-upload,
+.add-offer-upload,
+.instructor-upload-box,
+.donate-upload-box {
+  background-color: #2A231E;
+  border: 2px dashed #4A3F36;
+}
+
+.about-upload-text,
+.add-offer-upload-text,
+.instructor-upload-text,
+.donate-upload-text {
+  color: #C9BBAA;
+}
+
+.newsletter input {
+  background-color: #2A231E;
+}
+
+.home-hero {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.home-hero-tagline {
+  color: #C9BBAA;
+}
+
+.home-hero-desc {
+  color: #C9BBAA;
+}
+
+.home-hero-buttons {
+  border-top: 1px solid #4A3F36;
+}
+
+.offerings-details {
+  border-top: 1px solid #4A3F36;
+}
+
+.home-box {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.home-review-text {
+  color: #EDE4D6;
+}
+
+.home-review .home-member {
+  border-top: 1px solid #4A3F36;
+}
+
+.home-review .home-member p {
+  color: #EDE4D6;
+}
+
+.home-piece-maker {
+  color: #C9BBAA;
+}
+
+.home-piece-bottom {
+  border-top: 1px solid #4A3F36;
+}
+
+.home-piece-price {
+  color: #E3B27A;
+}
+
+.home-goal p {
+  color: #C9BBAA;
+}
+
+.home-review-offer,
+.home-piece-tag {
+  color: #A9BC96;
+  background-color: #2A231E;
+}
+
+.offerings-banner {
+  background-image: linear-gradient(to left, rgba(31, 26, 22, 0.95) 0%, rgba(31, 26, 22, 0.6) 40%, rgba(31, 26, 22, 0) 75%), url("../images/offeringsHero.png");
+}
+
+.offerings-banner p {
+  color: #C9BBAA;
+}
+
+.offerings-box {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.offerings-count {
+  color: #C9BBAA;
+}
+
+.offerings-filter h2 {
+  border-bottom: 1px solid #4A3F36;
+}
+
+.offerings-meta {
+  color: #C9BBAA;
+}
+
+.offerings-price {
+  color: #E3B27A;
+}
+
+.about-mission {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.about-mission-text p {
+  color: #C9BBAA;
+}
+
+.about-box {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.about-instructor-card {
+  background-color: #342B25;
+  border: 1px solid #4A3F36;
+}
+
+.about-instructor-card h3 {
+  color: #E3B27A;
+}
+
+.about-instructor-card p {
+  color: #C9BBAA;
+}
+
+.about-label {
+  color: #EDE4D6;
+}
+
+.profile-box {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.profile-table {
+  background-color: #2A231E;
+}
+
+.profile-table th,
+.profile-table td {
+  border: 1px solid #4A3F36;
+}
+
+.profile-table thead th {
+  background-color: #3A312A;
+  color: #E3B27A;
+}
+
+.profile-name {
+  color: #EDE4D6;
+}
+
+.profile-table tbody th {
+  background-color: #342B25;
+  color: #E3B27A;
+}
+
+.profile-table tbody tr:hover td {
+  background-color: #2A231E;
+}
+
+.profile-work {
+  background-color: #342B25;
+  border: 1px solid #4A3F36;
+}
+
+.profile-work img {
+  background-color: #2A231E;
+}
+
+.profile-work figcaption {
+  color: #C9BBAA;
+}
+
+.member-dashboard {
+  color: #EDE4D6;
+}
+
+.member-welcome {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.member-avatar {
+  background-color: #3A312A;
+  border: 2px solid #4A3F36;
+}
+
+.member-info h2 {
+  color: #E3B27A;
+}
+
+.member-info p {
+  color: #C9BBAA;
+}
+
+.stat-card {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.stat-card:hover {
+  background-color: #3A312A;
+}
+
+.stat-card strong {
+  color: #A9BC96;
+}
+
+.stat-card p {
+  color: #EDE4D6;
+}
+
+.previous-requests {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.requests-title {
+  color: #E3B27A;
+}
+
+.filter-btn {
+  background-color: #3A312A;
+  color: #E3B27A;
+  border: 1px solid #4A3F36;
+}
+
+.request-card {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.request-card:hover {
+  background-color: #3A312A;
+}
+
+.request-image {
+  background-color: #3A312A;
+  border: 1px solid #4A3F36;
+}
+
+.request-details h3 {
+  color: #E3B27A;
+}
+
+.request-details p {
+  color: #C9BBAA;
+}
+
+.request-status {
+  background-color: #3A312A;
+  color: #EDE4D6;
+  border: 1px solid #4A3F36;
+}
+
+.request-status.completed {
+  background-color: #2F3A2C;
+  border-color: #4A5A40;
+  color: #A9BC96;
+}
+
+.request-status.processing {
+  background-color: #22323C;
+  border-color: #3A4F5C;
+  color: #9DBBD0;
+}
+
+.request-status.rejected {
+  background-color: #3D2A20;
+  border-color: #5A3F30;
+  color: #E0A07A;
+}
+
+.suggested-offer {
+  background-color: #3A312A;
+  border: 1px solid #4A3F36;
+}
+
+.suggested-details h3 {
+  color: #E3B27A;
+}
+
+.suggested-details p {
+  color: #C9BBAA;
+}
+
+.join-outer-card {
+  background: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.join-form-box {
+  background: #2A231E;
+}
+
+.join-form-grid {
+  background-color: #3A312A;
+}
+
+.join-label {
+  color: #EDE4D6;
+}
+
+.join-form-group input[type="text"] {
+  background: #2A231E;
+  color: #EDE4D6;
+  border: 1px solid #4A3F36;
+}
+
+.join-radio-box {
+  background: #2A231E;
+  color: #EDE4D6;
+  border: 1px solid #4A3F36;
+}
+
+.join-select-box select {
+  background: #2A231E;
+  color: #EDE4D6;
+  border: 1px solid #4A3F36;
+}
+
+.join-checkbox-box {
+  background: #2A231E;
+  color: #EDE4D6;
+  border: 1px solid #4A3F36;
+}
+
+.evaluation-panel {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.rating-box {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.manager-offers-list {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.manager-offer-card {
+  background-color: #342B25;
+  border: 1px solid #4A3F36;
+}
+
+.manager-offer-info h3 {
+  color: #E3B27A;
+}
+
+.manager-offer-label {
+  color: #EDE4D6;
+}
+
+.manager-offer-info p {
+  color: #C9BBAA;
+}
+
+.manager-offer-buttons {
+  border-top: 1px solid #4A3F36;
+}
+
+.add-offer-currency {
+  color: #C9BBAA;
+}
+
+.instructor-card {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.instructor-info h2 {
+  color: #E3B27A;
+}
+
+.instructor-info p {
+  color: #C9BBAA;
+}
+
+.instructor-section-header h2 {
+  color: #E3B27A;
+}
+
+.community-hero {
+  background-image: linear-gradient(to left, rgba(31, 26, 22, 0.95) 0%, rgba(31, 26, 22, 0.75) 40%, rgba(31, 26, 22, 0) 75%), url("../images/community.jpg");
+}
+
+.community-hero h2 {
+  color: #E3B27A;
+}
+
+.community-box {
+  background-color: #2A231E;
+  border: 1px solid #4A3F36;
+}
+
+.community-challenge-info h3 {
+  color: #E3B27A;
+}
+
+.community-challenge-info p {
+  color: #C9BBAA;
+}
+
+.community-challenge-footer {
+  border-top: 1px solid #4A3F36;
+}
+
+.community-post {
+  background-color: #342B25;
+  border: 1px solid #4A3F36;
+}
+
+.community-post-author h3 {
+  color: #E3B27A;
+}
+
+.community-post-text {
+  color: #C9BBAA;
+  border-bottom: 1px solid #4A3F36;
+}
+
+.community-post-tag {
+  color: #A9BC96;
+  background-color: #2A231E;
+}
+
+.community-event {
+  background-color: #342B25;
+  border: 1px solid #4A3F36;
+}
+
+.community-event-info h3 {
+  color: #E3B27A;
+}
+
+.community-event-info p {
+  color: #C9BBAA;
+}
+
+@media (max-width: 768px) {
+  .community-hero {
+    background-image: linear-gradient(rgba(31, 26, 22, 0.85), rgba(31, 26, 22, 0.85)), url("../images/community.jpg");
+  }
+
+}
+
+.offerings-empty {
+  color: #C9BBAA;
+}
+
+.home-review-offer:hover,
+.home-piece-tag:hover,
+.community-post-tag:hover {
+  color: #FFFFFF;
+}

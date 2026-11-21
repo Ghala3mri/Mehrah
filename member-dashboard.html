@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مساحتي | مِهرَه</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+<!-- ========     header     ========= -->
+
+   <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html">من نحن؟</a></li>
+        <li><a href="member-dashboard.html" class="active" aria-current="page">مساحتي</a></li>
+        <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+        <li><a href="community.html">المجتمع</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li aria-current="page">مساحتي</li>
+      </ol>
+    </nav>
+    <h1 class="page-title">مساحتي</h1>
+
+<div class="member-dashboard">
+
+  <!-- 1. بطاقة الترحيب بالعضو -->
+
+  <section class="member-welcome">
+    <div class="member-profile">
+      <img src="images/avatar-woman.jpg"
+           alt="صورة العضو"
+           class="member-avatar">
+      <div class="member-info">
+        <h2>أهلاً غدي</h2>
+        <p>عضوة منذ مارس 2026</p>
+      </div>
+    </div>
+
+    <div class="welcome-actions">
+      <a href="evaluate-offering.html" class="dashboard-btn">
+        تقييم عرض مكتمل
+      </a>
+
+      <a href="request-join.html" class="dashboard-btn">
+        تقديم طلب انضمام جديد
+      </a>
+    </div>
+  </section>
+
+  <!-- 2. إحصائيات الطلبات -->
+
+  <div class="member-stats">
+    <div class="stat-card">
+      <strong>٤</strong>
+      <p>إجمالي الطلبات</p>
+    </div>
+
+    <div class="stat-card">
+      <strong>٢</strong>
+      <p>الطلبات قيد المعالجة</p>
+    </div>
+
+    <div class="stat-card">
+      <strong>١</strong>
+      <p>الطلبات المكتملة</p>
+    </div>
+  </div>
+
+  <!-- 3. الطلبات السابقة -->
+
+  <section class="previous-requests-section">
+    <h2 class="requests-title">طلبات المشاركة السابقة</h2>
+    <div class="previous-requests">
+
+    <!-- أزرار تصفية الطلبات -->
+
+    <div class="request-filters">
+      <button type="button" class="filter-btn active"
+              data-filter="all">الكل</button>
+      <button type="button" class="filter-btn"
+              data-filter="processing">قيد المعالجة</button>
+      <button type="button" class="filter-btn"
+              data-filter="completed">مكتملة</button>
+      <button type="button" class="filter-btn"
+              data-filter="rejected">مرفوضة</button>
+    </div>
+
+    <!-- الطلب الأول: مكتمل -->
+
+    <article class="request-card" data-status="completed">
+      <div class="request-image">
+        <img src="images/pottery.jpg"
+             alt="صورة ورشة صناعة الفخار">
+      </div>
+
+      <div class="request-details">
+        <h3>ورشة صناعة الفخار</h3>
+        <p>تاريخ الطلب: ١٤٤٨/٣/٢٢، التكلفة: ٣٥٠ ريال</p>
+      </div>
+      <span class="request-status completed">مكتملة</span>
+      <a href="evaluate-offering.html" class="request-action">
+          قيّم هذه التجربة←
+      </a>
+    </article>
+
+    <!-- الطلب الثاني: قيد المعالجة -->
+    <article class="request-card" data-status="processing">
+      <div class="request-image">
+        <img src="images/candles.jpg"
+             alt="صورة ورشة صناعة الشموع">
+      </div>
+      <div class="request-details">
+        <h3>ورشة صناعة الشموع</h3>
+        <p>تاريخ الطلب: ١٤٤٨/٣/٦، التكلفة: ١٥٠ ريال</p>
+      </div>
+      <span class="request-status processing">قيد المعالجة</span>
+    </article>
+
+    <!-- الطلب الثالث: مرفوض -->
+
+    <article class="request-card" data-status="rejected">
+      <div class="request-image">
+        <img src="images/ceramic-painting.jpg"
+             alt="صورة ورشة الرسم على الخزف">
+      </div>
+
+      <div class="request-details">
+        <h3>ورشة الرسم على الخزف</h3>
+        <p>تاريخ الطلب: ١٤٤٨/٥/١٦، التكلفة: ٢٣٠ ريال</p>
+      </div>
+      <span class="request-status rejected">مرفوضة</span>
+    </article>
+
+    <!-- الطلب الرابع: قيد المعالجة -->
+
+    <article class="request-card" data-status="processing">
+      <div class="request-image">
+        <img src="images/embrodry.png"
+             alt="صورة ورشة التطريز">
+      </div>
+
+      <div class="request-details">
+        <h3>ورشة تعلم اساسيات التطريز</h3>
+        <p>تاريخ الطلب: ١٤٤٨/٥/٢٣، التكلفة: ١٠٠ ريال</p>
+      </div>
+      <span class="request-status processing">قيد المعالجة</span>
+    </article>
+
+    <!-- 4. بطاقة العرض المقترح في نهاية القائمة -->
+
+    <article class="suggested-offer">
+      <div class="suggested-details">
+        <h3>جاهز لورشتك القادمة؟</h3>
+        <p>تصفح دليل الحرف واختر ورشة تناسب مستواك</p>
+      </div>
+
+      <a href="offerings.html" class="request-action">
+        استكشاف الحرف ←
+      </a>
+    </article>
+    </div>
+  </section>
+</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+<script src="js/member-dashboard.js"></script>
+  <script src="js/theme.js"></script>
+
+</body>
+</html>
+
+

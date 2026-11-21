@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلب الانضمام إلى العرض | مِهرَه</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+<!-- ========     header     ========= -->
+
+   <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html">من نحن؟</a></li>
+        <li><a href="member-dashboard.html" class="active" aria-current="page">مساحتي</a></li>
+        <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+        <li><a href="community.html">المجتمع</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="member-dashboard.html">مساحتي</a></li>
+        <li aria-current="page">طلب الانضمام إلى العرض</li>
+      </ol>
+    </nav>
+    <h1 class="page-title">طلب الانضمام إلى العرض</h1>
+
+
+<!-- نموذج طلب الانضمام إلى العرض -->
+
+<div class="section join-form-section">
+
+  <!-- الإطار الخارجي -->
+
+  <div class="join-outer-card">
+<form class="join-form-box" id="join-form" novalidate>
+          <div class="join-form-grid">
+
+        <!-- 1. الاسم الكامل -->
+
+        <div class="join-form-group">
+          <label class="join-label" for="full-name">الاسم الكامل: *</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="قم بإدخال الاسم الثلاثي"
+            required
+          >
+        </div>
+
+        <!-- 2. نوع الحجز -->
+
+        <div class="join-form-group">
+          <label class="join-label">نوع الحجز: *</label>
+          <div class="join-radio-group">
+            <label class="join-radio-box">
+              <input
+                type="radio"
+                name="booking"
+                value="personal"
+              
+                required
+              >
+              <span>حجز شخصي</span>
+            </label>
+
+            <label class="join-radio-box">
+              <input
+                type="radio"
+                name="booking"
+                value="gift"
+              >
+              <span>إهداء لصديق</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 3. الورشة الحرفية -->
+
+        <div class="join-form-group">
+          <label class="join-label" for="workshop">الورشة الحرفية: *</label>
+          <div class="join-select-box">
+            <select id="workshop" name="workshop" required>
+              <option value="">اختر العرض الحرفي</option>
+              <option value="pottery">ورشة صناعة الفخار</option>
+              <option value="ceramics">ورشة الرسم على الخزف</option>
+              <option value="embroidery">ورشة تعلم أساسيات التطريز</option>
+              <option value="candles">ورشة صناعة الشموع</option>
+              <option value="meetup">لقاء الحرفيين</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 4. اختيار الفترة المفضلة -->
+
+        <div class="join-form-group">
+
+          <label class="join-label" for="preferred-date">اختيار الفترة المفضلة: *</label>
+          <input type="date" id="preferred-date" name="preferred_date" required>
+        </div>
+
+        <!-- 5. باقة الاحتفال -->
+
+        <div class="join-form-group">
+          <label class="join-label">باقة الاحتفال:</label>
+          <label class="join-checkbox-box">
+            <input
+              type="checkbox"
+              name="celebration_package"
+              value="yes"
+            >
+            <span>
+              إضافة باقة الاحتفال لمناسباتكم الخاصة
+              (تشمل كيكة صغيرة، زينة طاولة، والتقاط صور تذكارية)
+              + ١٥٠ ريال
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- زر الإرسال -->
+      <div class="join-form-actions">
+        <button type="submit" class="btn">
+          إرسال الطلب
+        </button>
+      </div>
+    </form>
+  
+    </div>
+</div>
+
+<!-- عرض جميع الطلبات المضافة -->
+
+<div class="section join-requests-section">
+
+  <h2 class="page-title">طلباتي السابقة</h2>
+
+  <div id="requests-list">
+    <p>لا توجد طلبات مضافة حتى الآن.</p>
+  </div>
+
+  <div class="join-form-actions">
+    <a href="member-dashboard.html" class="btn">
+      العودة إلى مساحتي
+    </a>
+  </div>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+<script src="js/theme.js"></script>
+<script src="js/join.js"></script>
+</body>
+</html>

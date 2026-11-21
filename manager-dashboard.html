@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة المدير | مِهرَه</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+<!-- ========     header     ========= -->
+
+   <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html">من نحن؟</a></li>
+        <li><a href="member-dashboard.html">مساحتي</a></li>
+        <li><a href="manager-dashboard.html" class="active" aria-current="page">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+        <li><a href="community.html">المجتمع</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li aria-current="page">لوحة المدير</li>
+      </ol>
+    </nav>
+    <h1 class="page-title manager-title">لوحة المدير</h1>
+
+    <!-- روابط لوحة المدير (Flexbox) -->
+
+    <div class="manager-actions">
+      <a href="manage-instructors.html" class="btn manager-action-btn">إدارة المدربين</a>
+      <a href="add-offering.html" class="btn manager-action-btn">+ إضافة عرض جديد</a>
+    </div>
+
+    <!-- قائمة جميع عروض النادي -->
+
+    <section class="section">
+      <h2 class="section-title">جميع عروض النادي:</h2>
+      <ul class="manager-offers-list" id="offers-list">
+        <li class="manager-offer-card">
+          <img src="images/pottery.jpg" alt="قطع فخارية مصنوعة يدويًا" class="manager-offer-img">
+          <div class="manager-offer-info">
+            <h3><span class="manager-offer-label">اسم الورشة:</span> صناعة الفخار</h3>
+            <p>تعلّم تشكيل الطين على عجلة الفخار وصناعة أكواب وأوانٍ بيدك من البداية حتى التلوين.</p>
+            <div class="manager-offer-buttons">
+              <button type="button" class="btn btn-small manager-delete-btn">حذف</button>
+              <button type="button" class="btn btn-small">تعديل</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="manager-offer-card">
+          <img src="images/candles.jpg" alt="شموع معطّرة مصنوعة يدويًا" class="manager-offer-img">
+          <div class="manager-offer-info">
+            <h3><span class="manager-offer-label">اسم الورشة:</span> صناعة الشموع</h3>
+            <p>اصنع شموعًا معطّرة بنفسك، وتعلّم دمج الزيوت العطرية وصبّ القوالب بأشكال مختلفة.</p>
+            <div class="manager-offer-buttons">
+              <button type="button" class="btn btn-small manager-delete-btn">حذف</button>
+              <button type="button" class="btn btn-small">تعديل</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="manager-offer-card">
+          <img src="images/ceramic-painting.jpg" alt="قطعة خزف مزخرفة بالرسم اليدوي" class="manager-offer-img">
+          <div class="manager-offer-info">
+            <h3><span class="manager-offer-label">اسم الورشة:</span> الرسم على الخزف</h3>
+            <p>زيّن الأطباق والأكواب الخزفية بألوان خاصة وتقنيات رسم يدوي تعكس ذوقك.</p>
+            <div class="manager-offer-buttons">
+              <button type="button" class="btn btn-small manager-delete-btn">حذف</button>
+              <button type="button" class="btn btn-small">تعديل</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="manager-offer-card">
+          <img src="images/embrodry.png" alt="قطعة قماش مطرّزة على إطار تطريز" class="manager-offer-img">
+          <div class="manager-offer-info">
+            <h3><span class="manager-offer-label">اسم الورشة:</span> أساسيات التطريز</h3>
+            <p>تعرّف على الغرز الأساسية واستخدام إطار التطريز لتنفيذ أول قطعة بتصميمك.</p>
+            <div class="manager-offer-buttons">
+              <button type="button" class="btn btn-small manager-delete-btn">حذف</button>
+              <button type="button" class="btn btn-small">تعديل</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="manager-offer-card">
+          <img src="images/artisans-meetup.jpg" alt="ورشة حرفية فيها أعمال يدوية متنوعة" class="manager-offer-img">
+          <div class="manager-offer-info">
+            <h3><span class="manager-offer-label">اسم الورشة:</span> لقاء الحرفيين</h3>
+            <p>لقاء تعريفي مجاني يجمع الحرفيين والمبتدئين لتبادل الخبرات والتعرّف على النادي.</p>
+            <div class="manager-offer-buttons">
+              <button type="button" class="btn btn-small manager-delete-btn">حذف</button>
+              <button type="button" class="btn btn-small">تعديل</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+<script src="js/theme.js"></script>
+<script src="js/manager-dashboard.js"></script>
+</body>
+</html>

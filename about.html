@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن | مِهرَه</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+    <!-- ========     header     ========= -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html" class="active" aria-current="page">من نحن؟</a></li>
+        <li><a href="member-dashboard.html">مساحتي</a></li>
+        <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+        <li><a href="community.html">المجتمع</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li aria-current="page">من نحن</li>
+      </ol>
+    </nav>
+
+    <h1 class="page-title">من نحن</h1>
+   
+<!--رسالتنا-->
+<section class="about-mission">
+   <img src="images/ourmission.png" alt="ورشة عمل حِرفية" class="about-mission-image">
+  <div class="about-mission-text">
+    <h2 class="section-title">رسالتنا</h2>
+      <p>في مِهرَه نؤمن أن لكل يدٍ حكاية، وأن الحرفة اليدوية ليست مجرد هواية بل إرث يستحق أن يُحفظ ويُورَّث. نسعى إلى إحياء الحرف اليدوية بأسلوب عصري، وإلى بناء مجتمع يجمع الحرفيين والمبتدئين في مساحة آمنة للتعلّم والإبداع.</p>
+        <p>نقدّم ورشًا عملية يقودها مدربون متخصصون، ونحرص على أن يخرج كل مشارك بقطعة صنعها بيده، وبمهارة جديدة يفخر بها.</p>
+      </div>
+    </section>
+
+
+<!--تعرف على مدربينا-->
+
+    <section class="about">
+      <h2 class="section-title">تعرف على مدربينا</h2>
+      <div class="about-box">
+        <div class="about-instructors">
+          <article class="about-instructor-card">
+            <img src="images/instructor-abdulaziz.jpg" alt="المدرب عبدالعزيز الشهري" class="instructor-image">
+            <h3><span class="about-label">الاسم:</span> <a href="instructor-profile2.html" class="about-instructor-link">عبدالعزيز الشهري</a></h3>
+            <p><span class="about-label">الحرفة:</span> صناعة الفخار</p>
+            <a href="instructor-profile2.html" class="btn btn-small">زيارة صفحة المدرب</a>
+          </article>
+          <article class="about-instructor-card">
+            <img src="images/instructor-noura.jpg" alt="المدربة نوره العماري" class="instructor-image">
+           <h3><span class="about-label">الاسم:</span> <a href="instructor-profile3.html" class="about-instructor-link">نوره العماري</a></h3>
+            <p><span class="about-label">الحرفة:</span> الرسم على الخزف</p>
+            <a href="instructor-profile3.html" class="btn btn-small">زيارة صفحة المدرب</a>
+          </article>
+          <article class="about-instructor-card">
+            <img src="images/instructor-sadeem.jpg" alt="المدربه سديم المنيع" class="instructor-image">
+<h3><span class="about-label">الاسم:</span> <a href="instructor-profile.html" class="about-instructor-link">سديم المنيع</a></h3>           
+ <p><span class="about-label">الحرفة:</span> صناعة الشموع</p>
+            <a href="instructor-profile.html" class="btn btn-small">زيارة صفحة المدرب</a>
+          </article>
+          </div>
+      </div>
+    </section>
+
+    <!--انضم الى فريقنا-->
+<section class="section">
+<h2 class="section-title">انضم إلى فريقنا</h2>
+<form id="join-form" class="form-box about-join-form" action="#" method="post" enctype="multipart/form-data">
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="join-name">الاسم الكامل:*</label>
+            <input type="text" id="join-name" name="full-name" placeholder="قم بإدخال الاسم الثلاثي" required pattern="[^0-9].*" title="الاسم لا يمكن أن يبدأ برقم">
+          </div>
+
+        
+          <div class="form-group">
+            <label for="join-email">البريد الإلكتروني:*</label>
+            <input type="email" id="join-email" name="email" placeholder="example@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="join-dob">تاريخ الميلاد:*</label>
+            <input type="date" id="join-dob" name="dob" max="2008-12-31" required>
+          </div>
+ 
+          <div class="form-group">
+            <label for="join-expertise">مجال الخبرة:*</label>
+            <input type="text" id="join-expertise" name="expertise" placeholder="قم بإدخال مجال خبرتك (مثال: تشكيل الخزف)" required>
+          </div>
+ 
+          <!-- الصف ٣ -->
+          <div class="form-group">
+            <label for="join-skills">المهارات:*</label>
+            <input type="text" id="join-skills" name="skills" placeholder="مثال: التشكيل بالفخار، صب الريزن، التطريز..." required>
+          </div>
+ 
+          <div class="form-group">
+            <label for="join-education">المؤهل التعليمي:*</label>
+            <textarea id="join-education" name="education" class="about-education" placeholder="اذكر الدرجة العلمية واسم الجامعة (مثال: بكالوريوس تصميم منتجات، جامعة الأميرة نورة بنت عبدالرحمن)" required></textarea>
+          </div>
+ 
+          <!-- الصف ٤ -->
+          <div class="form-group">
+            <label for="join-photo">صورة المدرب:*</label>
+            <div class="about-upload">
+              <img src="images/imagesmode.png" alt="" class="about-upload-icon">
+              <p class="about-upload-text">اسحب الصورة هنا</p>
+              <label for="join-photo" class="btn btn-small btn-outline">اختر ملفًا</label>
+              <input type="file" id="join-photo" name="photo" accept="image/*" class="visually-hidden" required>
+            </div>
+          </div>
+
+          <div class="form-group about-empty"></div>
+ 
+        </div>
+ 
+        <div class="form-actions about-join-actions">
+          <button type="submit" class="btn">إرسال الطلب</button>
+          <button type="reset" class="btn btn-outline">إلغاء</button>
+        </div>
+      </form>
+    </section>
+
+
+
+  </main>
+
+  <!-- ========     footer     ========= -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+
+<script src="js/theme.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

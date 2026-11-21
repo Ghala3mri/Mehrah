@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدارة المدربين | مِهرَه</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+<!-- ========     header     ========= -->
+
+   <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html">من نحن؟</a></li>
+        <li><a href="member-dashboard.html">مساحتي</a></li>
+        <li><a href="manager-dashboard.html" class="active" aria-current="page">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+        <li><a href="community.html">المجتمع</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        <li aria-current="page">إدارة المدربين</li>
+      </ol>
+    </nav>
+
+<!-- ========== قسم عرض المدربين ========== -->
+
+<section class="instructors-section">
+    <h1 class="page-title instructors-title">إدارة المدربين</h1>
+
+<!-- نموذج تحديد المدربين للحذف -->
+<form action="#" method="get" id="delete-instructors-form">
+<!-- البحث عن مدرب -->
+
+<div class="instructors-search">
+<label for="instructor-search" class="visually-hidden">
+البحث عن مدرب
+</label>
+
+<input
+type="search"
+id="instructor-search"
+name="search"
+placeholder="البحث عن مدرب...">
+</div>
+
+<!-- قائمة المدربين -->
+ 
+<div class="instructors-list">
+
+<!-- المدرب الأول -->
+
+<article class="instructor-card">
+<input
+type="checkbox"
+class="instructor-select"
+name="selected-instructors"
+value="abdulaziz"
+aria-label="تحديد عبدالعزيز الشهري">
+
+<div class="instructor-info">
+<h2>اسم المدرب: عبدالعزيز الشهري</h2>
+<p>الحرفة: صناعة الفخار</p>
+<a href="instructor-profile2.html" class="btn btn-small">
+تفاصيل
+</a>
+
+</div>
+
+<img
+src="images/instructor-abdulaziz.jpg"
+alt="المدرب عبدالعزيز الشهري"
+class="instructor-img">
+</article>
+
+<!-- المدربة الثانية -->
+<article class="instructor-card">
+<input
+type="checkbox"
+class="instructor-select"
+name="selected-instructors"
+value="noura"
+aria-label="تحديد نوره العماري">
+
+<div class="instructor-info">
+<h2>اسم المدرب: نوره العماري</h2>
+<p>الحرفة: الرسم على الخزف</p>
+<a href="instructor-profile3.html" class="btn btn-small">
+تفاصيل
+</a>
+
+</div>
+
+<img
+src="images/instructor-noura.jpg"
+alt="المدربة نوره العماري"
+class="instructor-img">
+</article>
+
+<!-- المدربة الثالثة -->
+<article class="instructor-card">
+<input
+type="checkbox"
+class="instructor-select"
+name="selected-instructors"
+value="sadeem"
+aria-label="تحديد سديم المنيع">
+
+<div class="instructor-info">
+<h2>اسم المدرب: سديم المنيع</h2>
+<p>الحرفة: صناعة الشموع</p>
+<a href="instructor-profile.html" class="btn btn-small">
+تفاصيل
+</a>
+</div>
+
+<img
+src="images/instructor-sadeem.jpg"
+alt="المدربة سديم المنيع"
+class="instructor-img">
+</article>
+
+</div>
+
+<!-- زر حذف المحدد -->
+<div class="instructor-delete-row">
+<button type="submit" class="btn instructor-delete-btn">
+حذف المحدد
+</button>
+</div>
+
+</form>
+</section>
+
+<!-- ========== قسم إضافة مدرب جديد ========== -->
+
+<section class="add-instructor-section">
+<!-- عنوان القسم -->
+<div class="instructor-section-header">
+<h2>إضافة مدرب جديد</h2>
+</div>
+
+<!-- نموذج إضافة مدرب جديد -->
+<form
+class="form-box add-instructor-form"
+action="#"
+method="post"
+enctype="multipart/form-data"
+novalidate>
+<div class="instructor-form-grid">
+
+<!-- العمود الأيمن -->
+
+<div class="instructor-form-column">
+<!-- اسم المدرب -->
+<div class="form-group">
+<label for="instructor-name">اسم المدرب :*</label>
+<input type="text" id="instructor-name" name="name" placeholder="طارق العمر" required>
+</div>
+
+<!-- تاريخ الميلاد -->
+<div class="form-group">
+<label for="instructor-dob">تاريخ الميلاد :*</label>
+<input
+type="date"
+id="instructor-dob"
+name="dob"
+required>
+</div>
+
+<!-- المهارات -->
+<div class="form-group">
+<label for="instructor-skills">المهارات :*</label>
+<input type="text" id="instructor-skills" name="skills" placeholder="النحت اليدوي، تقنيات طلاء وحرق الخزف" required>
+</div>
+
+<!-- صورة المدرب -->
+<div class="form-group instructor-photo-group">
+<label for="instructor-photo">صورة المدرب :*</label>
+<div class="instructor-upload-box">
+<img src="images/imagesmode.png" alt="" class="instructor-upload-icon">
+<p class="instructor-upload-text">اسحب الصورة هنا</p>
+<label for="instructor-photo" class="btn btn-small btn-outline">اختر ملفًا</label>
+<input
+type="file"
+id="instructor-photo"
+name="photo"
+accept="image/*"
+class="visually-hidden"
+required>
+</div>
+</div>
+</div>
+
+<!-- العمود الأيسر -->
+<div class="instructor-form-column">
+
+<!-- البريد الإلكتروني -->
+
+<div class="form-group">
+<label for="instructor-email">البريد الإلكتروني :*</label>
+<input type="email" id="instructor-email" name="email" placeholder="tariq.alomar@email.com" required>
+</div>
+
+<!-- مجال الخبرة -->
+
+<div class="form-group">
+<label for="instructor-expertise">مجال الخبرة :*</label>
+<input type="text" id="instructor-expertise" name="expertise" placeholder="فنون الفخار والخزف" required>
+</div>
+
+<!-- المؤهل التعليمي -->
+
+<div class="form-group">
+<label for="instructor-education">المؤهل التعليمي :*</label>
+<input type="text" id="instructor-education" name="education" placeholder="بكالوريوس تربية فنية، جامعة الملك سعود" required>
+</div>
+</div>
+</div>
+
+<!-- أزرار إضافة المدرب وإلغاء -->
+
+<div class="form-actions instructor-form-actions">
+<button type="submit" class="btn">
+إضافة مدرب جديد
+</button>
+
+<button type="reset" class="btn btn-outline">
+إلغاء
+</button>
+
+</div>
+</form>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+<script src="js/theme.js"></script>
+<script src="js/manage-instructors.js"></script>
+</body>
+
+</html>
+
+

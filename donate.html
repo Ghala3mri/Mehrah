@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تبرع بقطعتك | مِهرَه</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+<!-- ========     header     ========= -->
+
+   <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html">من نحن؟</a></li>
+        <li><a href="member-dashboard.html">مساحتي</a></li>
+        <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery" class="active" aria-current="page">معرض العطاء</a></li>
+        <li><a href="community.html">المجتمع</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li aria-current="page">تبرع بقطعتك</li>
+      </ol>
+    </nav>
+    <h1 class="page-title">تبرع بقطعتك</h1>
+
+<div class="section donate-section">
+
+<form class="form-box donate-form" id="donate-form"
+action="#"
+method="post"
+enctype="multipart/form-data"
+novalidate>
+<div class="form-grid donate-form-grid">
+
+<!-- الاسم الكامل -->
+
+<div class="form-group">
+<label for="donor-name">الاسم الكامل *</label>
+<input
+type="text"
+id="donor-name"
+name="donor-name"
+placeholder="أصايل محمد العمري"
+required>
+</div>
+
+<!-- البريد الإلكتروني -->
+
+<div class="form-group">
+<label for="donor-email">البريد الإلكتروني *</label>
+<input
+type="email"
+id="donor-email"
+name="donor-email"
+placeholder="Asayel.M@email.com"
+required>
+</div>
+
+<!-- اسم القطعة -->
+
+<div class="form-group">
+<label for="piece-name">اسم القطعة *</label>
+<input
+type="text"
+id="piece-name"
+name="piece-name"
+placeholder="كوب قهوة خزفي مزخرف"
+required>
+</div>
+
+<!-- الورشة التي صنعت فيها القطعة -->
+
+<div class="form-group">
+<label for="workshop">الورشة التي صنعت فيها *</label>
+<select id="workshop" name="workshop" required>
+<option value="">اختر من القائمة</option>
+<option value="pottery">صناعة الفخار</option>
+<option value="ceramics">الرسم على الخزف</option>
+<option value="candles">صناعة الشموع</option>
+</select>
+</div>
+
+<!-- صورة القطعة -->
+
+<div class="form-group donate-photo-group">
+<label for="piece-photo">صورة القطعة *</label>
+<div class="donate-upload-box">
+<img src="images/imagesmode.png" alt="" class="donate-upload-icon">
+<p class="donate-upload-text" id="donate-upload-text">اسحب الصورة هنا</p>
+<label for="piece-photo" class="btn btn-small btn-outline">اختر ملفًا</label>
+<input type="file" id="piece-photo" name="piece-photo" accept="image/*" class="visually-hidden" required>
+</div>
+</div>
+
+<!-- قيمة التبرع المقترحة -->
+
+<div class="form-group donate-value-group">
+<label for="donation-value">قيمة التبرع المقترحة *</label>
+<input
+type="number"
+id="donation-value"
+name="donation-value"
+min="0"
+placeholder="١٥٠ ريال"
+required>
+</div>
+
+<!-- الجهة المستفيدة المفضلة -->
+
+<div class="form-group">
+<label for="beneficiary">الجهة المستفيدة المفضلة *</label>
+<select id="beneficiary" name="beneficiary" required>
+<option value="">اختر من القائمة</option>
+<option value="charity">جمعية خيرية</option>
+<option value="families">الأسر المحتاجة</option>
+<option value="other">جهة أخرى</option>
+</select>
+</div>
+
+<!-- الموافقة على عرض القطعة -->
+
+<div class="form-group donate-checkbox-group">
+<label class="donate-checkbox-label">
+أوافق على عرض القطعة باسمي في المعرض
+<input
+type="checkbox"
+id="display-in-gallery"
+name="display-in-gallery"
+value="yes">
+</label>
+</div>
+</div>
+
+<!-- أزرار النموذج -->
+
+<div class="form-actions donate-form-actions">
+<button type="submit" class="btn">
+إرسال القطعة
+</button>
+
+<button type="reset" class="btn btn-outline">
+إلغاء
+</button>
+
+</div>
+</form>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+<script src="js/theme.js"></script>
+<script src="js/donate.js"></script>
+</body>
+</html>
