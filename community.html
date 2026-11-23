@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المجتمع | مِهرَه</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-css">
+</head>
+<body id="top">
+
+<!-- ========     header     ========= -->
+   <header class="site-header">
+    <nav class="navbar" aria-label="القائمة الرئيسية">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="شعار مهره"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li><a href="offerings.html">دليل الحرف</a></li>
+        <li><a href="about.html">من نحن؟</a></li>
+        <li><a href="member-dashboard.html">مساحتي</a></li>
+        <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+        <li><a href="community.html" class="active" aria-current="page">المجتمع</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <ol>
+        <li><a href="index.html">الصفحة الرئيسية</a></li>
+        <li aria-current="page">المجتمع</li>
+      </ol>
+    </nav>
+
+    <h1 class="page-title">المجتمع</h1>
+
+
+    <section class="community-hero">
+
+      <h2>مجتمع مِهرَه</h2>
+      <p>شارك إبداعاتك وتعلّم مع مجتمع يشاركك نفس الشغف</p>
+    </section>
+    <!-- تحدي الأسبوع -->
+
+    <section class="section">
+      <h2 class="section-title">تحدي الأسبوع</h2>
+      <div class="community-box community-challenge">
+        <img src="images/week-challenge.jpg" alt="بنطال جينز مرمّم بقطعة قماش مطرّزة يدويًا" class="community-challenge-img">
+
+        <div class="community-challenge-info">
+          <h3>اصنع قطعة من خامة معاد تدويرها!</h3>
+          <p>حوّل قطعة قماش مستعملة أو علبة قديمة إلى عمل فني جديد، وشارك صورة إنجازك قبل نهاية الأسبوع. أكثر الأعمال إبداعًا تُعرض في معرض العطاء.</p>
+          <div class="community-challenge-footer">
+            <ul class="community-stats">
+              <li class="community-stat">
+                <img src="images/group.png" alt="" class="community-icon">
+                <span id="challenge-count">٣٤ مشاركة</span>
+              </li>
+
+              <li class="community-stat">
+                <img src="images/time.png" alt="" class="community-icon">
+                يتبقى ٣ أيام
+              </li>
+
+            </ul>
+            <button type="button" class="btn" id="share-btn">شارك إنجازك</button>
+          </div>
+
+          <!-- نموذج المشاركة في التحدي (يظهر عند الضغط على شارك إنجازك) -->
+          <form class="form-box community-share-form" id="share-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="share-name">الاسم:*</label>
+                <input type="text" id="share-name" name="share-name" placeholder="قم بإدخال اسمك">
+              </div>
+
+              <div class="form-group">
+                <label for="share-image">صورة الإنجاز:*</label>
+                <input type="file" id="share-image" name="share-image" accept="image/*">
+              </div>
+
+              <div class="form-group full">
+                <label for="share-text">وصف الإنجاز:*</label>
+                <textarea id="share-text" name="share-text" placeholder="حوّلت علبة قديمة إلى مزهرية ملوّنة"></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-small">شارك</button>
+              <button type="button" class="btn btn-small btn-outline" id="share-cancel">إلغاء</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- منشورات الأعضاء -->
+
+    <section class="section">
+      <h2 class="section-title">منشورات الأعضاء</h2>
+      <div class="community-box">
+
+        <div class="community-posts-top">
+          <button type="button" class="btn btn-small" id="new-post-btn">+ منشور جديد</button>
+        </div>
+
+        <!-- نموذج المنشور الجديد (يظهر عند الضغط على + منشور جديد) -->
+        <form class="form-box community-post-form" id="post-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="post-name">الاسم:*</label>
+              <input type="text" id="post-name" name="post-name" placeholder="قم بإدخال اسمك">
+            </div>
+
+            <div class="form-group">
+              <label for="post-workshop">الورشة:*</label>
+              <select id="post-workshop" name="post-workshop">
+                <option value="">اختر من القائمة</option>
+                <option value="أساسيات التطريز">أساسيات التطريز</option>
+                <option value="صناعة الشموع">صناعة الشموع</option>
+                <option value="صناعة الفخار">صناعة الفخار</option>
+                <option value="الرسم على الخزف">الرسم على الخزف</option>
+                <option value="لقاء الحرفيين">لقاء الحرفيين</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label for="post-text">نص المنشور:*</label>
+              <textarea id="post-text" name="post-text" placeholder="أول قطعة أصنعها بيدي، وكانت تجربة ممتعة"></textarea>
+            </div>
+
+            <div class="form-group full">
+              <label for="post-image">صورة المنشور:*</label>
+              <input type="file" id="post-image" name="post-image" accept="image/*">
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-small">نشر</button>
+            <button type="button" class="btn btn-small btn-outline" id="post-cancel">إلغاء</button>
+          </div>
+        </form>
+
+        <div class="community-posts" id="posts-list">
+
+          <article class="community-post">
+
+            <img src="images/post-ghadi.jpg" alt="إبريق فخاري مصنوع يدويًا" class="community-post-img">
+            <div class="community-post-author">
+              <img src="images/avatar-woman.jpg" alt="" class="community-post-avatar">
+              <h3>غدي التمامي</h3>
+            </div>
+
+            <p class="community-post-text">أول إبريق أشكّله بيدي، والنتيجة كانت أجمل مما توقعت</p>
+            <a href="offerings.html" class="community-post-tag">من ورشة صناعة الفخار</a>
+            <ul class="community-stats community-post-stats">
+
+              <li class="community-stat">
+                <img src="images/heart.png" alt="" class="community-icon">
+                ٦ <span class="visually-hidden">إعجابات</span>
+              </li>
+
+              <li class="community-stat">
+                <img src="images/comment.png" alt="" class="community-icon">
+                ٢٤ <span class="visually-hidden">تعليقًا</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="community-post">
+            <img src="images/post-hana.jpg" alt="شموع مصنوعة يدويًا" class="community-post-img">
+            <div class="community-post-author">
+              <img src="images/avatar-woman.jpg" alt="" class="community-post-avatar">
+              <h3>هناء الشهري</h3>
+            </div>
+            <p class="community-post-text">ورشة ممتعة جدًا، وأكثر ما أحببته اختيار الروائح </p>
+            <a href="offerings.html" class="community-post-tag">من ورشة صناعة الشموع</a>
+            <ul class="community-stats community-post-stats">
+
+              <li class="community-stat">
+                <img src="images/heart.png" alt="" class="community-icon">
+                ٣ <span class="visually-hidden">إعجابات</span>
+              </li>
+
+              <li class="community-stat">
+                <img src="images/comment.png" alt="" class="community-icon">
+                ١٨ <span class="visually-hidden">تعليقًا</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="community-post">
+            <img src="images/post-faisal.jpg" alt="مزهرية خزفية ملوّنة بتدرجات الأخضر" class="community-post-img">
+            <div class="community-post-author">
+              <img src="images/avatar-man.jpg" alt="" class="community-post-avatar">
+              <h3>فيصل القحطاني</h3>
+            </div>
+
+            <p class="community-post-text">أول تجربة لي مع التلوين بتدرجات الأخضر، وأشعر أنها قطعة من الطبيعة</p>
+            <a href="offerings.html" class="community-post-tag">من ورشة الرسم على الخزف</a>
+            <ul class="community-stats community-post-stats">
+              <li class="community-stat">
+                <img src="images/heart.png" alt="" class="community-icon">
+                ٢ <span class="visually-hidden">إعجابات</span>
+              </li>
+              <li class="community-stat">
+                <img src="images/comment.png" alt="" class="community-icon">
+                ١٢ <span class="visually-hidden">تعليقًا</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="community-more">
+          <button type="button" class="btn btn-outline" id="more-btn">عرض المزيد</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- فعاليات قادمة -->
+
+    <section class="section">
+      <h2 class="section-title">فعاليات قادمة</h2>
+      <div class="community-box community-events">
+
+        <article class="community-event">
+
+          <time class="community-event-date" datetime="2026-10-15">
+            <span class="community-event-day">١٥</span>
+            أكتوبر
+          </time>
+
+          <div class="community-event-info">
+            <h3>أمسية حرفية مفتوحة</h3>
+            <p>مقر النادي، ٧ مساءً</p>
+          </div>
+          <button type="button" class="btn btn-small">سأحضر</button>
+        </article>
+        <article class="community-event">
+          <time class="community-event-date" datetime="2026-10-28">
+            <span class="community-event-day">٢٨</span>
+            أكتوبر
+          </time>
+
+          <div class="community-event-info">
+            <h3>سوق الأعمال اليدوية</h3>
+            <p>مقر النادي، ٤ عصرًا</p>
+          </div>
+          <button type="button" class="btn btn-small">سأحضر</button>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="images/logo.png" alt="شعار مِهرَه" class="footer-logo">
+        <h2>لجديد مِهرَه</h2>
+        <form class="newsletter">
+          <label for="newsletter-email" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="قم بإدخال البريد الإلكتروني">
+          <button type="submit" class="btn btn-small">الانضمام لنشرة مِهرَه</button>
+        </form>
+      </div>
+
+      <div class="footer-col">
+        <h2>تجوّل</h2>
+        <ul class="footer-links">
+          <li><a href="offerings.html">دليل الحرف</a></li>
+          <li><a href="about.html">من نحن؟</a></li>
+          <li><a href="community.html">المجتمع</a></li>
+          <li><a href="index.html#giving-gallery">معرض العطاء</a></li>
+          <li><a href="member-dashboard.html">مساحتي</a></li>
+          <li><a href="manager-dashboard.html">لوحة المدير</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>تواصل معنا</h2>
+        <address>
+          <p><a href="mailto:info@mehrah.com">info@mehrah.com</a> <img src="images/mail.png" alt="البريد الإلكتروني" class="footer-icon"></p>
+          <p><a href="tel:0554155116">0554155116</a> <img src="images/phone.png" alt="رقم الجوال" class="footer-icon"></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2>حساباتنا</h2>
+        <ul class="footer-social">
+          <li>@mehrah <img src="images/instagram.svg" alt="Instagram" class="footer-icon"></li>
+          <li>@mehrah <img src="images/x.svg" alt="X" class="footer-icon"></li>
+          <li>@mehrah <img src="images/snapchat.svg" alt="Snapchat" class="footer-icon"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>جميع الحقوق محفوظة &copy; ٢٠٢٦ — نادي مِهرَه</p>
+      <a href="#top" class="btn btn-small">العودة للأعلى &uarr;</a>
+      <p>صنع بحب وبيدٍ ماهرة</p>
+      <p>سياسة الخصوصية | الشروط والأحكام</p>
+    </div>
+  </footer>
+
+<script src="js/theme.js"></script>
+<script src="js/community.js"></script>
+</body>
+</html>
